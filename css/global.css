@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/../fonts/Raleway-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--color-white); }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+/*# sourceMappingURL=global.css.map */
