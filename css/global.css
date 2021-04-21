@@ -6,6 +6,13 @@
   font-style: normal; }
 
 @font-face {
+  font-family: "Raleway";
+  src: url("../fonts/../fonts/Raleway-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
   font-family: "Inter";
   src: url("../fonts/../fonts/Inter-Regular.woff2") format("woff2");
   font-weight: 400;

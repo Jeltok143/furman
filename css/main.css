@@ -319,6 +319,13 @@
     .up__button--footer {
       display: none; } }
 
+.pin__button {
+  padding: 1.5rem;
+  font-size: 1.7rem;
+  color: #000;
+  border: 1px solid #000;
+  background: none; }
+
 .call__widget {
   position: fixed;
   right: 85px;
@@ -595,6 +602,12 @@
   justify-content: center;
   align-items: center;
   margin: 5rem 0rem; }
+
+.modal__review {
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-family: 'Inter';
+  color: #000; }
 
 .main {
   padding-bottom: 23rem; }
@@ -983,7 +996,8 @@
   resize: none; }
   @media (max-width: 1199px) {
     .page__input {
-      font-size: 1.25rem; } }
+      font-size: 1.25rem;
+      padding: 1.1rem; } }
   .page__input::-moz-placeholder {
     font-size: 1.7rem;
     font-family: 'Inter';
@@ -1006,9 +1020,6 @@
         font-size: 1.25rem; }
       .page__input::placeholder {
         font-size: 1.25rem; } }
-  @media (max-width: 1199px) {
-    .page__input {
-      padding: 1.1rem; } }
 
 .page__label {
   width: 100%;
@@ -1296,6 +1307,112 @@
 
 .reviews {
   padding: 8rem 0rem; }
+
+.reviews__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.reviews__left {
+  width: 60%; }
+  @media (max-width: 768px) {
+    .reviews__left {
+      width: 100%;
+      order: 2; } }
+
+.reviews__right {
+  width: 35%; }
+  @media (max-width: 768px) {
+    .reviews__right {
+      width: 100%;
+      order: 1; } }
+
+.reviews__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.reviews__top-left {
+  display: flex;
+  align-items: center; }
+
+.reviews__item {
+  margin: 2rem 0rem 4rem; }
+
+.reviews__top-name {
+  font-size: 2rem;
+  font-family: 'Raleway';
+  font-weight: 700;
+  color: #000;
+  margin-right: 1.5rem; }
+
+.reviews__top-date {
+  font-size: 1.5rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.4); }
+
+.reviews__link {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: 'Inter'; }
+
+.reviews__text {
+  font-size: 1.7rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  line-height: 1.2; }
+
+.reviews__photos {
+  display: flex;
+  max-width: 270px;
+  width: 100%;
+  justify-content: space-between; }
+
+.fslightbox-toolbar:nth-child(1) {
+  background: none; }
+
+.fslightbox-toolbar:nth-child(7) {
+  background: none; }
+
+.fslightbox-toolbar:nth-child(1) {
+  background: none; }
+
+.fslightbox-toolbar-button {
+  background: none; }
+  .fslightbox-toolbar-button:first-child {
+    display: none; }
+
+.fslightbox-toolbar-button:nth-child(1) {
+  order: 7; }
+
+.fslightbox-toolbar-button:nth-child(2) {
+  position: relative;
+  top: 15px;
+  right: 15px; }
+
+.fslightbox-toolbar-button:nth-child(3) {
+  order: 5;
+  background: none; }
+
+.fslightbox-toolbar-button:nth-child(4) {
+  order: 4;
+  background: none; }
+
+.fslightbox-toolbar-button:nth-child(5) {
+  order: 3;
+  background: none; }
+
+.fslightbox-toolbar-button:nth-child(6) {
+  order: 2;
+  background: none; }
+
+.fslightbox-toolbar-button:nth-child(7) {
+  order: 1;
+  background: none; }
+
+.fslightbox-slide-number-container {
+  display: none; }
 
 .footer {
   background-color: #000;
