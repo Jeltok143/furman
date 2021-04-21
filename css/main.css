@@ -323,6 +323,9 @@
   @media (max-width: 768px) {
     .up__button--footer {
       display: none; } }
+  .up__button > a {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none; }
 
 .page__upload-btn {
   padding: 1.5rem;
@@ -725,6 +728,51 @@
   @media (max-width: 768px) {
     .main__text {
       width: 100%; } }
+
+.about {
+  padding: 8rem 0rem; }
+
+.about__inner {
+  display: flex;
+  justify-content: flex-start; }
+
+.about__nav {
+  padding-top: 7rem;
+  width: 20%; }
+
+.about__brand {
+  width: 40%;
+  margin-left: 10rem; }
+
+.about__nav-item {
+  margin-bottom: 1.5rem; }
+  .about__nav-item:last-child {
+    margin-bottom: 0; }
+
+.about__nav-link {
+  font-size: 1.7rem;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: 'Raleway';
+  font-weight: 500; }
+  .about__nav-link--active {
+    color: #000; }
+
+.about__brand-title {
+  font-size: 5.5rem;
+  font-family: 'Raleway';
+  font-weight: 500; }
+
+.about__brand-subtitle {
+  font-weight: 3rem;
+  color: #000;
+  font-family: 'Raleway';
+  font-weight: 500; }
+
+.about__brand-text {
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-family: 'Inter';
+  line-height: 1.3; }
 
 .interior {
   margin-top: 8.5rem; }
