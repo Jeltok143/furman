@@ -439,6 +439,8 @@
   color: #000;
   text-align: center;
   margin-bottom: 3rem; }
+  .modal__title--mail {
+    text-align: left; }
   @media (max-width: 1199px) {
     .modal__title {
       font-size: 2.5rem; } }
@@ -518,6 +520,81 @@
   @media (max-width: 768px) {
     .modal__product-price {
       font-size: 1.1rem; } }
+
+.modal__mail {
+  display: none;
+  transition: background-color .2s linear;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100; }
+  .modal__mail--opened {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden; }
+
+.modal__mail-container {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 40%;
+  background-color: #fff;
+  padding: 5rem;
+  transition: 2s;
+  transform: translateX(100%);
+  overflow: auto; }
+  .modal__mail-container--opened {
+    display: block;
+    transform: translateX(0%); }
+  @media (max-width: 768px) {
+    .modal__mail-container {
+      width: 100%; } }
+
+.modal__mail-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.modal__mail-close {
+  position: relative; }
+
+.modal__mail-btn {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  transition: transform .2s linear;
+  cursor: pointer; }
+  .modal__mail-btn:hover {
+    transform: rotate(15deg); }
+
+.modal__mail-img {
+  width: 16px;
+  height: 16px; }
+
+.modal__mail-top {
+  margin: 0rem -5rem; }
+
+.modal__mail-bg {
+  margin-top: 3rem;
+  width: 100%;
+  height: auto; }
+
+.modal__mail-main {
+  display: flex;
+  max-width: 380px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0rem; }
 
 .main {
   padding-bottom: 23rem; }
@@ -1090,7 +1167,7 @@
     font-size: 1rem; } }
 
 .catalog {
-  padding: 8rem 0rem 15rem; }
+  padding: 8rem 0rem; }
   @media (max-width: 991px) {
     .catalog {
       padding: 2rem 0rem; } }
