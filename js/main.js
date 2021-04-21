@@ -40,32 +40,4 @@ callWidget.addEventListener('click', function () {
     body.classList.remove("no-scroll");
   });
 });
-var modalMail = document.querySelector('.white__button');
-var modalMailMobile = document.querySelector('.white__button--footer');
-modalMail.addEventListener('click', function () {
-  var modalMail = document.querySelector('.modal__mail');
-  var modalMailContainer = document.querySelector('.modal__mail-container');
-  var modalMailClose = document.querySelector('.modal__mail-btn');
-  modalMail.classList.toggle('modal__mail--opened');
-  modalMailContainer.classList.toggle('modal__mail-container--opened');
-  body.classList.add('no-scroll');
-  modalMailContainer.addEventListener('click', function () {
-    event.stopPropagation();
-  });
-  modalMail.addEventListener('click', function () {
-    modalMail.classList.remove('modal__mail--opened');
-    modalMailContainer.classList.remove('modal__mail-container--opened');
-    body.classList.remove('no-scroll');
-  });
-  modalMailClose.addEventListener('click', function () {
-    modalMail.classList.remove('modal__mail--opened');
-    modalMailContainer.classList.remove('modal__mail-container--opened');
-    body.classList.remove('no-scroll');
-  });
-  modalMailMobile.addEventListener('click', function () {
-    modalMail.classList.toggle('modal__mail--opened');
-    modalMailContainer.classList.toggle('modal__mail-container--opened');
-    body.classList.add('no-scroll');
-  });
-});
 //# sourceMappingURL=main.js.map
