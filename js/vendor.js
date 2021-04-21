@@ -18,60 +18,6 @@ if(!redirectActive) {
   });
 }
 
-let modalMail = document.querySelector('.white__button');
-let modalMailMobile = document.querySelector('.white__button--footer');
-
-modalMail.addEventListener('click', function() {
-  let modalMail = document.querySelector('.modal__mail');
-  let modalMailContainer = document.querySelector('.modal__mail-container');
-  let modalMailClose = document.querySelector('.modal__mail-btn');
-
-  modalMail.classList.toggle('modal__mail--opened');
-  modalMailContainer.classList.toggle('modal__mail-container--opened');
-  body.classList.add('no-scroll');
-
-  modalMailContainer.addEventListener('click', () => {
-    event.stopPropagation();
-  });
-
-  modalMail.addEventListener('click', function() {
-    modalMail.classList.remove('modal__mail--opened');
-    modalMailContainer.classList.remove('modal__mail-container--opened');
-    body.classList.remove('no-scroll');
-  });
-
-  modalMailClose.addEventListener('click', function() {
-    modalMail.classList.remove('modal__mail--opened');
-    modalMailContainer.classList.remove('modal__mail-container--opened');
-    body.classList.remove('no-scroll');
-  });
-});
-
-modalMailMobile.addEventListener('click', function() {
-  let modalMail = document.querySelector('.modal__mail');
-  let modalMailContainer = document.querySelector('.modal__mail-container');
-  let modalMailClose = document.querySelector('.modal__mail-btn');
-
-  modalMail.classList.toggle('modal__mail--opened');
-  modalMailContainer.classList.toggle('modal__mail-container--opened');
-  body.classList.add('no-scroll');
-
-  modalMailContainer.addEventListener('click', () => {
-    event.stopPropagation();
-  });
-
-  modalMail.addEventListener('click', function() {
-    modalMail.classList.remove('modal__mail--opened');
-    modalMailContainer.classList.remove('modal__mail-container--opened');
-    body.classList.remove('no-scroll');
-  });
-
-  modalMailClose.addEventListener('click', function() {
-    modalMail.classList.remove('modal__mail--opened');
-    modalMailContainer.classList.remove('modal__mail-container--opened');
-    body.classList.remove('no-scroll');
-  });
-});
 /**
  * Swiper 5.3.7
  * Most modern mobile touch slider and framework with hardware accelerated transitions
