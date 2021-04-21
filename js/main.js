@@ -84,4 +84,21 @@ modalMailMobile.addEventListener('click', function () {
     body.classList.remove('no-scroll');
   });
 });
+var modalReviewClose = document.querySelector('.modal__review-exit');
+var modalReview = document.querySelector('.modal__review');
+var modalReviewContainer = document.querySelector('.modal__review-container');
+
+if (!modalReviewClose) {} else {
+  modalReviewClose.addEventListener('click', function () {
+    body.classList.remove('no-scroll');
+    modalReview.classList.add('modal__review--closed');
+  });
+  modalReviewContainer.addEventListener('click', function () {
+    event.stopPropagation();
+  });
+  modalReview.addEventListener('click', function () {
+    body.classList.remove('no-scroll');
+    modalReview.classList.add('modal__review--closed');
+  });
+}
 //# sourceMappingURL=main.js.map

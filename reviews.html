@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="no-scroll">
   <header class="header">
   <div class="container">
     <div class="header__inner">
@@ -282,6 +282,42 @@
   </div><!-- ./modal__mail-container -->
 </div><!-- ./modal__mail -->
 
+  <div class="modal__review">
+  <div class="modal__review-container">
+
+    <div class="modal__review-header">
+      <img src="img/reviews/ph-7.png" alt="" class="modal__review-bg">
+      <button class="modal__review-exit">
+        <img class="modal__review-close" src="img/icons/close-icon.png" alt="close">
+      </button>
+    </div>
+
+    <div class="modal__review-content">
+      <h2 class="modal__title modal__title--review">Соберите <br> неповторимый диван</h2>
+
+      <div class="review__input">
+        <input type="text" class="page__input page__input--rev" placeholder="Имя">
+      </div>
+      <div class="review__input">
+        <input type="tel" class="page__input page__input--rev" placeholder="Номер телефона">
+      </div>
+
+
+      <div class="modal__block-bottom">
+        <label class="page__label">
+          <div>
+            <input type="checkbox" class="page__check">
+            <span class="page__fake"></span>
+          </div>
+          <span class="page__access">Я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности.</span>
+        </label>
+      </div>
+
+      <button class="black__button black__button--full">Заказать звонок</button>
+
+    </div><!-- ./modal__review-content -->
+  </div><!-- ./modal__review-container -->
+</div><!-- ./modal__review -->
 
   <div class="reviews">
     <div class="container">
@@ -320,15 +356,21 @@
             </div>
             <div class="reviews__photos">
 
-              <a reviews__gallery-links data-fslightbox="gallery1" href="img/reviews/ph-1-big.png">
-                <img src="img/reviews/ph-1.png" alt="photo" class="reviews__gallery">
-              </a>
-              <a reviews__gallery-links data-fslightbox="gallery1" href="img/reviews/ph-2-big.png">
-                <img src="img/reviews/ph-2.png" alt="photo" class="reviews__gallery">
-              </a>
-              <a reviews__gallery-links data-fslightbox="gallery1" href="img/reviews/ph-3-big.png">
-                <img src="img/reviews/ph-3.png" alt="photo" class="reviews__gallery">
-              </a>
+              <div>
+                <a reviews__gallery-links data-fslightbox="gallery1" href="img/reviews/ph-1-big.png">
+                  <img src="img/reviews/ph-1.png" alt="photo" class="reviews__gallery">
+                </a>
+              </div>
+              <div>
+                <a reviews__gallery-links data-fslightbox="gallery1" href="img/reviews/ph-2-big.png">
+                  <img src="img/reviews/ph-2.png" alt="photo" class="reviews__gallery">
+                </a>
+              </div>
+              <div>
+                <a reviews__gallery-links data-fslightbox="gallery1" href="img/reviews/ph-3-big.png">
+                  <img src="img/reviews/ph-3.png" alt="photo" class="reviews__gallery">
+                </a>
+              </div>
 
             </div>
           </div><!-- ./reviews__item -->
@@ -362,9 +404,11 @@
               <p>Впечатлений море," мы счастливы"))))</p>
             </div>
             <div class="reviews__photos">
-              <a reviews__gallery-links data-fslightbox="gallery2" href="img/reviews/ph-1-big.png">
-                <img src="img/reviews/ph-4.png" alt="photo" class="reviews__gallery">
-              </a>
+              <div>
+                <a reviews__gallery-links data-fslightbox="gallery2" href="img/reviews/ph-1-big.png">
+                  <img src="img/reviews/ph-4.png" alt="photo" class="reviews__gallery">
+                </a>
+              </div>
             </div>
           </div><!-- ./reviews__item -->
 
@@ -397,12 +441,16 @@
               <p>Огромное спасибо продавцу-консультанту за грамотную помощь в выборе мебели, рассказ о характеристиках дивана. Очень понравилось исполнение мебели: мягкие и качественные материалы, отличное исполнение, надежная фурнитура. Спальное место очень комфортное, удобное и обширное. В общем, покупкой очень довольны! Будем обращаться ещё !!!</p>
             </div>
             <div class="reviews__photos">
-              <a reviews__gallery-links data-fslightbox="gallery3" href="img/reviews/ph-1-big.png">
-                <img src="img/reviews/ph-5.png" alt="photo" class="reviews__gallery">
-              </a>
-              <a reviews__gallery-links data-fslightbox="gallery3" href="img/reviews/ph-1-big.png">
-                <img src="img/reviews/ph-6.png" alt="photo" class="reviews__gallery">
-              </a>
+              <div>
+                <a reviews__gallery-links data-fslightbox="gallery3" href="img/reviews/ph-1-big.png">
+                  <img src="img/reviews/ph-5.png" alt="photo" class="reviews__gallery">
+                </a>
+              </div>
+              <div>
+                <a reviews__gallery-links data-fslightbox="gallery3" href="img/reviews/ph-1-big.png">
+                  <img src="img/reviews/ph-6.png" alt="photo" class="reviews__gallery">
+                </a>
+              </div>
             </div>
           </div><!-- ./reviews__item -->
 
@@ -421,17 +469,43 @@
             </div>
           </div><!-- ./reviews__item -->
 
+          <div class="reviews__load">
+            <button class="load-more__button">Показать ещё 20 отзывов</button>
+          </div>
+
         </div><!-- ./reviews__left -->
 
         <div class="reviews__right">
-          <h2 class="modal__title modal__title--mail">Оставьте свой отзыв</h2>
-          <p class="modal__review">
-            С другой стороны сложившаяся структура организации требуют от нас анализа существенных финансовых и административных условий.
-          </p>
-          <input type="text" class="page__input" placeholder="Ваше имя">
-          <input type="text" class="page__input" placeholder="Ваш отзыв">
-          <input class="pin__button" type="file" placeholder="↓ Прикрепить фото">
-        </div>
+          <div class="reviews__right-inner">
+            <h2 class="modal__title modal__title--mail">Оставьте свой отзыв</h2>
+            <p class="modal__subtitle">
+              С другой стороны сложившаяся структура организации требуют от нас анализа существенных финансовых и административных условий.
+            </p>
+            <input type="text" class="page__input page__input--rev" placeholder="Ваше имя">
+            <div class="review__input">
+              <input type="text" class="page__input page__input--rev" placeholder="Ваш отзыв">
+            </div>
+            <div>
+              <label class="page__upload-btn">
+                ↓ Прикрепить фото
+                <input type="file" class="page__upload">
+              </label>
+            </div>
+
+            <div class="reviews__access">
+              <label class="page__label">
+                <div>
+                  <input type="checkbox" class="page__check">
+                  <span class="page__fake"></span>
+                </div>
+                <span class="page__access">Я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности.</span>
+              </label>
+            </div>
+
+            <button class="black__button black__button--full">Оставить отзыв</button>
+
+          </div><!-- ./reviews__right-inner -->
+        </div><!-- ./reviews__right -->
 
       </div><!-- ./reviews__inner -->
     </div><!-- ./container -->

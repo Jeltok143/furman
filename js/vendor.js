@@ -1,5 +1,6 @@
 let buttonClick = document.querySelector('.black__button');
 let redirectActive = document.getElementById('redirect');
+let loadMoreButton = document.querySelector('.load-more__button');
 
 
 if(!buttonClick) {
@@ -15,6 +16,14 @@ if(!redirectActive) {
 } else {
   redirectActive.addEventListener('click', function() {
     redirectActive.classList.toggle('redirect__link--active');
+  });
+}
+
+if(!loadMoreButton) {
+
+} else {
+  loadMoreButton.addEventListener('click', function () {
+    loadMoreButton.classList.toggle('load-more__button--active');
   });
 }
 
