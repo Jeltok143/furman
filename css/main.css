@@ -450,7 +450,7 @@
       font-size: 1.5rem; } }
   @media (max-width: 499px) {
     .modal__title {
-      font-size: 1.4rem; } }
+      font-size: 2rem; } }
 
 .modal__block {
   display: flex;
@@ -472,7 +472,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: center; }
+  align-items: center;
+  padding-top: 2rem; }
 
 .modal__block-text {
   max-width: 380px;
