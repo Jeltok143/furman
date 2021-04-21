@@ -1054,21 +1054,6 @@
     transform: translate(-50%, -50%);
     transition: opacity .2s linear;
     opacity: 0; }
-    @media (max-width: 991px) {
-      .page__fake::before {
-        width: 16px;
-        height: 16px;
-        background-size: 16px; } }
-    @media (max-width: 768px) {
-      .page__fake::before {
-        width: 12px;
-        height: 12px;
-        background-size: 12px; } }
-    @media (max-width: 499px) {
-      .page__fake::before {
-        width: 12px;
-        height: 12px;
-        background-size: 12px; } }
 
 .page__access {
   font-size: 1.5rem;
