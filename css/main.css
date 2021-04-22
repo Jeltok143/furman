@@ -822,6 +822,12 @@
     .about__brand-list {
       font-size: 1.5rem; } }
 
+.stocks {
+  padding: 8rem 0rem; }
+  @media (max-width: 768px) {
+    .stocks {
+      padding: 2rem 0; } }
+
 .interior {
   margin-top: 8.5rem; }
   @media (max-width: 768px) {
@@ -962,6 +968,10 @@
 .page__block {
   margin-top: 7.5rem;
   margin-bottom: 7.5rem; }
+  @media (max-width: 768px) {
+    .page__block {
+      margin-top: 2rem;
+      margin-bottom: 2rem; } }
 
 .page__title {
   font-size: 5.5rem;
@@ -1064,7 +1074,11 @@
       font-size: 1.5rem; } }
 
 .secondary__card-text {
-  font-size: 2rem; }
+  font-size: 2rem;
+  margin-top: 1rem; }
+  @media (max-width: 768px) {
+    .secondary__card-text {
+      font-size: 1.5rem; } }
 
 .primary__card-price,
 .secondary__card-price {
@@ -1085,6 +1099,10 @@
 .secondary__card-price {
   margin-left: 0;
   margin-top: 3rem; }
+  @media (max-width: 768px) {
+    .secondary__card-price {
+      font-size: 1.3rem;
+      margin-top: 1rem; } }
 
 .page__video {
   position: relative;
