@@ -731,6 +731,9 @@
 
 .about {
   padding: 8rem 0rem; }
+  @media (max-width: 768px) {
+    .about {
+      padding: 2rem 0; } }
 
 .about__inner {
   display: flex;
@@ -739,10 +742,17 @@
 .about__nav {
   padding-top: 7rem;
   width: 20%; }
+  @media (max-width: 991px) {
+    .about__nav {
+      display: none; } }
 
 .about__brand {
   width: 40%;
   margin-left: 10rem; }
+  @media (max-width: 1199px) {
+    .about__brand {
+      width: 100%;
+      margin-left: 0; } }
 
 .about__nav-item {
   margin-bottom: 1.5rem; }
@@ -754,7 +764,7 @@
   color: rgba(0, 0, 0, 0.4);
   font-family: 'Raleway';
   font-weight: 500; }
-  .about__nav-link--active {
+  .about__nav-link:hover {
     color: #000; }
 
 .about__brand-title {
@@ -763,16 +773,51 @@
   font-weight: 500; }
 
 .about__brand-subtitle {
-  font-weight: 3rem;
+  font-size: 3rem;
   color: #000;
   font-family: 'Raleway';
-  font-weight: 500; }
+  font-weight: 500;
+  margin: 4rem 0rem 3rem; }
 
 .about__brand-text {
   font-size: 1.7rem;
   font-weight: 400;
   font-family: 'Inter';
   line-height: 1.3; }
+
+.about__brand-interior {
+  font-size: 1.5rem;
+  font-family: 'Inter';
+  color: rgba(0, 0, 0, 0.3);
+  margin: 1rem 0; }
+
+.about__brand-card {
+  background-color: #F4F4F4;
+  padding: 5rem 8rem; }
+
+.about__brand-list {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 2rem;
+  position: relative;
+  font-size: 1.7rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 2rem; }
+  .about__brand-list::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 5px;
+    width: 7px;
+    height: 7px;
+    background-color: #000;
+    border-radius: 50%; }
+  @media (max-width: 768px) {
+    .about__brand-list {
+      font-size: 1.5rem; } }
 
 .interior {
   margin-top: 8.5rem; }
