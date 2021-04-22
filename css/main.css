@@ -796,7 +796,7 @@
   padding: 5rem 8rem; }
   @media (max-width: 991px) {
     .about__brand-card {
-      padding: 2rem 3rem; } }
+      padding: 1rem 2rem; } }
 
 .about__brand-list {
   display: flex;
