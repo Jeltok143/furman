@@ -794,6 +794,9 @@
 .about__brand-card {
   background-color: #F4F4F4;
   padding: 5rem 8rem; }
+  @media (max-width: 991px) {
+    .about__brand-card {
+      padding: 2rem 3rem; } }
 
 .about__brand-list {
   display: flex;
