@@ -284,6 +284,9 @@
       justify-content: center;
       width: 100%; } }
 
+.black__button > a {
+  color: #fff; }
+
 .white__button {
   background-color: #fff;
   color: #000; }
@@ -942,6 +945,12 @@
   color: rgba(0, 0, 0, 0.4);
   margin-left: 1rem; }
 
+.contact__inner {
+  padding: 8rem 0rem; }
+  @media (max-width: 768px) {
+    .contact__inner {
+      padding: 2rem 0; } }
+
 .redirect {
   display: flex;
   align-items: center; }
@@ -1360,9 +1369,9 @@
 
 .catalog {
   padding: 8rem 0rem; }
-  @media (max-width: 991px) {
+  @media (max-width: 768px) {
     .catalog {
-      padding: 2rem 0rem; } }
+      padding: 2rem 0; } }
 
 .catalog__block {
   padding: 5rem 0rem 5rem;
