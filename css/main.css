@@ -2010,6 +2010,10 @@
   display: flex;
   align-items: center;
   padding: 3rem 0rem; }
+  @media (max-width: 499px) {
+    .footer-up__inner {
+      justify-content: flex-start;
+      margin-left: -1.5rem; } }
 
 .footer-up__link {
   color: rgba(0, 0, 0, 0.4);
@@ -2023,6 +2027,9 @@
   @media (max-width: 768px) {
     .footer-up__link {
       font-size: 1.4rem; } }
+  @media (max-width: 499px) {
+    .footer-up__link {
+      font-size: 0.95rem; } }
 
 .footer-up__icon {
   width: 20px;
