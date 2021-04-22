@@ -1398,6 +1398,12 @@
 
 .swiper-container {
   padding-bottom: 120px; }
+  @media (max-width: 991px) {
+    .swiper-container {
+      padding-bottom: 60px; } }
+  @media (max-width: 768px) {
+    .swiper-container {
+      padding-bottom: 30px; } }
 
 .swiper-button-prev,
 .swiper-button-next {
@@ -1410,6 +1416,11 @@
   outline: none;
   width: 8.75px;
   height: 17.5px; }
+  @media (max-width: 499px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+      margin-left: 2rem;
+      margin-top: 1rem; } }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -1417,6 +1428,12 @@
 
 .slider {
   margin-bottom: 8rem; }
+  @media (max-width: 991px) {
+    .slider {
+      margin-bottom: 5rem; } }
+  @media (max-width: 768px) {
+    .slider {
+      margin-bottom: 4rem; } }
 
 .slide {
   position: relative; }
