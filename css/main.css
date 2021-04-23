@@ -1356,6 +1356,59 @@
       font-size: 1.3rem;
       padding: 0; } }
 
+.product__set-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  @media (max-width: 991px) {
+    .product__set-inner {
+      justify-content: center; } }
+
+.product__set-title {
+  font-size: 3rem;
+  color: #000;
+  font-family: 'Raleway';
+  font-weight: 500; }
+
+.product__set-left {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  margin: 3.2rem 0; }
+  @media (max-width: 991px) {
+    .product__set-left {
+      width: 100%; } }
+
+@media (max-width: 991px) {
+  .product__set-right {
+    display: flex;
+    justify-content: center;
+    width: 100%; } }
+
+.product__param-name {
+  font-size: 1.7rem;
+  color: #000;
+  font-family: 'Inter';
+  font-weight: 400; }
+  @media (max-width: 499px) {
+    .product__param-name {
+      font-size: 1.3rem; } }
+
+.product__param-value {
+  font-size: 1.7rem;
+  color: #000;
+  font-family: 'Inter';
+  font-weight: 400; }
+  @media (max-width: 499px) {
+    .product__param-value {
+      font-size: 1.3rem; } }
+
+.product__left-param {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: .8rem 0rem; }
+
 .redirect {
   display: flex;
   align-items: center; }
