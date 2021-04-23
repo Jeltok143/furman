@@ -1369,6 +1369,9 @@
   color: #000;
   font-family: 'Raleway';
   font-weight: 500; }
+  @media (max-width: 499px) {
+    .product__set-title {
+      margin: 2rem 0; } }
 
 .product__set-left {
   display: flex;
