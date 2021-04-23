@@ -1468,6 +1468,75 @@
 .product__banner-img {
   position: relative; }
 
+.product__consult {
+  padding: 2rem;
+  margin: 2rem 0; }
+  @media (max-width: 991px) {
+    .product__consult {
+      background-color: #f4f4f4; } }
+
+.product__consult-photo {
+  height: 600px;
+  width: auto;
+  -o-object-fit: cover;
+  object-fit: cover; }
+  @media (max-width: 991px) {
+    .product__consult-photo {
+      display: none; } }
+
+.product__consult-input {
+  display: flex;
+  flex-direction: column; }
+
+.product__consult-img {
+  position: relative; }
+
+.product__consult-main {
+  position: absolute;
+  top: 5%;
+  left: 30%; }
+  @media (max-width: 991px) {
+    .product__consult-main {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center; } }
+
+.product__consult-subtitle {
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-family: 'Inter';
+  color: #000;
+  width: 99%;
+  margin-bottom: 4rem;
+  margin-top: 3rem; }
+  @media (max-width: 991px) {
+    .product__consult-subtitle {
+      text-align: center; } }
+  @media (max-width: 768px) {
+    .product__consult-subtitle {
+      font-size: 1.6rem; } }
+  @media (max-width: 499px) {
+    .product__consult-subtitle {
+      font-size: 1.5rem;
+      text-align: left; } }
+
+.product__consult-title {
+  font-size: 3rem;
+  font-family: 'Raleway';
+  font-weight: 500;
+  color: #000; }
+  @media (max-width: 991px) {
+    .product__consult-title {
+      font-size: 2.5rem; } }
+  @media (max-width: 991px) {
+    .product__consult-title {
+      font-size: 2.2rem; } }
+  @media (max-width: 991px) {
+    .product__consult-title {
+      font-size: 2rem; } }
+
 .redirect {
   display: flex;
   align-items: center; }
