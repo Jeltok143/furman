@@ -1218,7 +1218,8 @@
 .product__header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 4rem; }
 
 .product__header-name {
   display: flex;
@@ -1295,6 +1296,21 @@
       width: 100%;
       text-align: center;
       margin: 2rem 0; } }
+
+.product__photo-block {
+  margin: 4rem 0rem 5rem; }
+
+.product__secondary-photo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.product__card-photo {
+  margin-top: 2rem;
+  width: 49%; }
+  @media (max-width: 768px) {
+    .product__card-photo {
+      margin-top: 1rem; } }
 
 .redirect {
   display: flex;
