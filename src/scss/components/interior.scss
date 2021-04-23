@@ -1,0 +1,151 @@
+.interior {
+  margin-top: 8.5rem;
+
+  @media (max-width: (768px)) {
+    margin-top: 6rem;
+  }
+}
+
+.interior__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 6rem;
+
+  @media (max-width: (1199px)) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.interior__photo {
+  width: 45%;
+
+  @media (max-width: (1199px)) {
+    width: 80%;
+  }
+
+  @media (max-width: (991px)) {
+    width: 85%;
+  }
+
+  @media (max-width: (768px)) {
+    width: 90%;
+  }
+
+  @media (max-width: (499px)) {
+    width: 100%;
+  }
+}
+
+.interior__info {
+  width: 47%;
+
+  @media (max-width: (1199px)) {
+    width: 80%;
+  }
+
+  @media (max-width: (991px)) {
+    width: 85%;
+  }
+
+  @media (max-width: (768px)) {
+    width: 90%;
+  }
+
+  @media (max-width: (499px)) {
+    width: 100%;
+  }
+}
+
+.interior__title {
+  font-size: 5.5rem;
+  color: $black;
+  font-family: 'Raleway';
+  font-weight: 500;
+  margin-top: 1.7rem;
+  margin-bottom: 3rem;
+
+  @media (max-width: (1199px)) {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  @media (max-width: (991px)) {
+    font-size: 4rem;
+  }
+
+  @media (max-width: (768px)) {
+    font-size: 3.5rem;
+  }
+
+  @media (max-width: 499px) {
+    font-size: 3rem;
+  }
+}
+
+.interior__text {
+  font-size: 1.7rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  color: $black;
+  line-height: 1.5;
+  margin-bottom: 9rem;
+
+  @media (max-width: (1199px)) {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 5rem;
+  }
+
+  @media (max-width: (991px)) {
+    margin-bottom: 4rem;
+  }
+}
+
+.interior__cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+  margin-bottom: 7.5rem;
+  flex-wrap: wrap;
+}
+
+.interior__cards-item {
+  margin-bottom: 4.5rem;
+
+  @media (max-width: (991px)) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.interior__cards-img {
+  width: 90%;
+  margin-bottom: 2rem;
+
+  @media (max-width: (991px)) {
+    width: 100%;
+  }
+}
+
+.interior__cards-bottom {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.interior__cards-text {
+  font-size: 1.7rem;
+  font-family: 'Raleway';
+  font-weight: 500;
+  color: $black;
+}
+
+.interior__cards-number {
+  font-size: 1.7rem;
+  font-family: 'Raleway';
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+  margin-left: 1rem;
+}

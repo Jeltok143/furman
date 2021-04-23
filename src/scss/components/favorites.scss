@@ -1,0 +1,97 @@
+.favorites {
+  padding: 8rem 0rem;
+}
+
+.favorites__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: (499px)) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    & > button {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.favorites__cards {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  @media (max-width: (1199px)) {
+    justify-content: center;
+  }
+}
+
+.favorites__card-item {
+  margin-bottom: 3.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 31.33333%;
+
+  @media (max-width: (768px)) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.favorites__delete {
+
+  &--all {
+    font-size: 1.7rem;
+    color: rgba(0, 0, 0, 0.4);
+    font-family: 'Raleway';
+    font-weight: 500;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+  }
+}
+
+.favorite__card-img {
+  margin-bottom: 2rem;
+  position: relative;
+
+  &:hover {
+    .favorite__delete-btn {
+      opacity: 1;
+    }
+  }
+}
+
+.favorite__delete-btn {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: $white;
+  border-radius: 50%;
+  right: 15px;
+  top: 15px;
+  background-image: url(../img/icons/close-icon.png);
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  opacity: 0;
+  border: none;
+  transition: opacity .2s linear, transform .2s linear;
+  cursor: pointer;
+
+  &:hover {
+    transform: rotate(15deg);
+  }
+
+  @media (max-width: (499px)) {
+    width: 30px;
+    height: 30px;
+    background-size: 11px;
+  }
+}

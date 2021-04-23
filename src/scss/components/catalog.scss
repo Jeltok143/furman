@@ -1,0 +1,163 @@
+.catalog {
+  padding: 8rem 0rem;
+
+  @media (max-width: (768px)) {
+    padding: 2rem 0;
+  }
+}
+
+.catalog__block {
+  padding: 5rem 0rem 5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @media (max-width: (768px)) {
+    padding: 1rem 0rem 1rem;
+  }
+}
+
+.catalog__block-item {
+  margin-top: 4rem;
+
+  @media (max-width: (768px)) {
+    margin-top: 2rem;
+  }
+}
+
+.catalog__block-top {
+  cursor: pointer;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #D8D8D8;
+    opacity: 0;
+    transition: opacity .2s linear;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 30%;
+    }
+  }
+}
+
+.catalog__block-name {
+  font-size: 2rem;
+  color: $black;
+  font-family: 'Raleway';
+  font-weight: 500;
+  text-align: center;
+
+  @media (max-width: (768px)) {
+    font-size: 1.5rem;
+  }
+}
+
+.catalog__novelty {
+  padding: 5rem 0rem 5rem;
+
+  @media (max-width: (768px)) {
+    padding: 1rem 0rem 1rem;
+  }
+}
+
+.catalog__choice {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+
+  @media (max-width: (991px)) {
+    flex-direction: column;
+  }
+}
+
+.catalog__choice-left {
+  display: flex;
+
+  & > select {
+    margin-right: 2rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: (991px)) {
+    flex-direction: column;
+  }
+}
+
+.catalog__roll {
+  display: flex;
+  order: 1;
+  padding: 1.5rem 1.6rem;
+  border: 1px solid $black;
+  background-color: $white;
+  color: $black;
+  outline: none;
+  margin-bottom: 4rem;
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: inherit;
+  font-size: 1.7rem;
+
+  @media (max-width: (991px)) {
+    width: 100%;
+  }
+}
+
+.catalog__roll-item {
+  display: flex;
+  align-items: center;
+  background-color: $white;
+  color: $black;
+  width: 100%;
+
+  & > div {
+    margin-right: 15rem;
+  }
+}
+
+.catalog__pagination-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.catalog__pagination-item {
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  color: $black;
+  transition: background-color .2s linear;
+
+  &:first-child {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    background-color: #F4F4F4;
+  }
+
+  &--active {
+    background-color: $black;
+    color: $white;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
+  }
+
+  & > a {
+    color: inherit;
+  }
+}
