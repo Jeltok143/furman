@@ -1409,6 +1409,47 @@
   justify-content: space-between;
   margin: .8rem 0rem; }
 
+.product__review {
+  margin: 8rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.product__review-left {
+  width: 49%; }
+  @media (max-width: 991px) {
+    .product__review-left {
+      width: 100%; } }
+
+.product__review-info {
+  color: #000;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1.7rem; }
+  @media (max-width: 499px) {
+    .product__review-info {
+      font-size: 1.5rem; } }
+
+.product__review-right {
+  width: 49%; }
+  @media (max-width: 991px) {
+    .product__review-right {
+      display: flex;
+      flex-direction: column;
+      width: 100%; } }
+
+.product__review-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media (max-width: 499px) {
+    .product__review-top {
+      flex-direction: column;
+      align-items: flex-start; } }
+
+.product__review-img {
+  margin: 2rem 0; }
+
 .redirect {
   display: flex;
   align-items: center; }
