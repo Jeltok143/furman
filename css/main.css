@@ -1719,6 +1719,32 @@
   .catalog__roll-item > div {
     margin-right: 15rem; }
 
+.catalog__pagination-block {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.catalog__pagination-item {
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  color: #000;
+  transition: background-color .2s linear; }
+  .catalog__pagination-item:first-child {
+    transform: rotate(180deg); }
+  .catalog__pagination-item:hover {
+    background-color: #F4F4F4; }
+  .catalog__pagination-item--active {
+    background-color: #000;
+    color: #fff; }
+    .catalog__pagination-item--active:hover {
+      background-color: #000;
+      color: #fff; }
+  .catalog__pagination-item > a {
+    color: inherit; }
+
 .favorites {
   padding: 8rem 0rem; }
 
@@ -2083,7 +2109,8 @@
 
 .footer-up__icon {
   width: 20px;
-  height: 20px; }
+  height: 20px;
+  margin: -1rem; }
   @media (max-width: 991px) {
     .footer-up__icon {
       width: 16px;
