@@ -768,7 +768,12 @@
       font-size: 3rem; } }
 
 .main__text {
-  width: 50%; }
+  width: 53%;
+  margin-bottom: 7rem; }
+  @media (max-width: 1599px) {
+    .main__text {
+      margin-bottom: 2rem;
+      width: 52%; } }
   @media (max-width: 768px) {
     .main__text {
       width: 100%; } }
