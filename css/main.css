@@ -1186,7 +1186,10 @@
 
 .author__photo-item {
   margin: 5rem 0rem 3.5rem;
-  width: 40%; }
+  width: 30%; }
+  @media (max-width: 1199px) {
+    .author__photo-item {
+      width: 70%; } }
   @media (max-width: 991px) {
     .author__photo-item {
       width: 60%; } }
