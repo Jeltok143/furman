@@ -32,7 +32,8 @@ html {
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
-  background-color: var(--color-white); }
+  background-color: var(--color-white);
+  font-feature-settings: 'pnum' on, 'lnum' on; }
 
 img {
   max-width: 100%; }
