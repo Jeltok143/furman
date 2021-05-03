@@ -8,10 +8,10 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 var navButton = document.querySelector(".menu__btn");
 var body = document.body;
+var navClose = document.querySelector('.menu__close');
+var container = document.querySelector('.container');
+var navMenu = document.querySelector(".menu");
 navButton.addEventListener("click", function () {
-  var navMenu = document.querySelector(".menu");
-  var navClose = document.querySelector('.menu__close');
-  var container = document.querySelector('.container');
   navClose.addEventListener('click', function () {
     navMenu.classList.remove("menu__active");
     container.classList.remove("container--active");
@@ -132,10 +132,40 @@ try {
 
   for (_iterator.s(); !(_step = _iterator.n()).done;) {
     _loop();
-  }
+  } // Search modal 
+
 } catch (err) {
   _iterator.e(err);
 } finally {
   _iterator.f();
 }
+
+var searchHidden = document.querySelector('.header__buttons-item--hidden');
+var searchMobile = document.querySelector('.header__buttons-item');
+var searchModal = document.querySelector('.search');
+var searchClose = document.querySelector('.search__close-btn');
+var searchInner = document.querySelector('.search__inner');
+searchHidden.addEventListener('click', function () {
+  body.classList.add('no-scroll');
+  searchModal.classList.add('search--active');
+});
+searchMobile.addEventListener('click', function () {
+  body.classList.add('no-scroll');
+  searchModal.classList.add('search--active');
+});
+searchClose.addEventListener('click', function () {
+  body.classList.remove('no-scroll');
+  searchModal.classList.remove('search--active');
+  navMenu.classList.remove("menu__active");
+  container.classList.remove("container--active");
+});
+searchInner.addEventListener('click', function () {
+  event.stopPropagation();
+});
+searchModal.addEventListener('click', function () {
+  body.classList.remove('no-scroll');
+  searchModal.classList.remove('search--active');
+  navMenu.classList.remove("menu__active");
+  container.classList.remove("container--active");
+});
 //# sourceMappingURL=main.js.map
