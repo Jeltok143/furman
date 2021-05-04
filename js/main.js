@@ -145,6 +145,7 @@ var searchMobile = document.querySelector('.header__buttons-item');
 var searchModal = document.querySelector('.search');
 var searchClose = document.querySelector('.search__close-btn');
 var searchInner = document.querySelector('.search__inner');
+var searchMenu = document.querySelector('.menu__input');
 searchHidden.addEventListener('click', function () {
   body.classList.add('no-scroll');
   searchModal.classList.add('search--active');
@@ -167,5 +168,15 @@ searchModal.addEventListener('click', function () {
   searchModal.classList.remove('search--active');
   navMenu.classList.remove("menu__active");
   container.classList.remove("container--active");
+});
+searchMenu.addEventListener('click', function () {
+  body.classList.add('no-scroll');
+  searchModal.classList.add('search--active');
+}); // Input changes
+
+var inputValue = document.querySelector('.search__input');
+var searchChange = document.querySelector('.search__offer');
+inputValue.addEventListener('change', function () {
+  searchChange.classList.toggle('search__offer--active');
 });
 //# sourceMappingURL=main.js.map
