@@ -55,9 +55,16 @@
 }
 
 .main__text {
-  width: 50%;
+  width: 53%;
+
+  @media (max-width: (1599px)) {
+    margin-bottom: 2rem;
+    width: 52%;
+  }
 
   @media (max-width: (768px)) {
     width: 100%;
   }
+
+  margin-bottom: 7rem;
 }

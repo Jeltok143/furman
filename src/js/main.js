@@ -1,10 +1,10 @@
 let navButton = document.querySelector(".menu__btn");
 let body = document.body;
+let navClose = document.querySelector('.menu__close');
+let container = document.querySelector('.container');
+let navMenu = document.querySelector(".menu");
 
 navButton.addEventListener("click", function () {
-  let navMenu = document.querySelector(".menu");
-  let navClose = document.querySelector('.menu__close');
-  let container = document.querySelector('.container');
 
   navClose.addEventListener('click', function() {
     navMenu.classList.remove("menu__active");
@@ -146,3 +146,38 @@ for(let scrollUp of scrollToTop) {
     const blockId = scrollUp.getAttribute
   });
 }
+
+// Search modal 
+let searchHidden = document.querySelector('.header__buttons-item--hidden');
+let searchMobile = document.querySelector('.header__buttons-item');
+let searchModal = document.querySelector('.search');
+let searchClose = document.querySelector('.search__close-btn');
+let searchInner = document.querySelector('.search__inner');
+
+searchHidden.addEventListener('click', function() {
+  body.classList.add('no-scroll');
+  searchModal.classList.add('search--active');
+});
+
+searchMobile.addEventListener('click', function() {
+  body.classList.add('no-scroll');
+  searchModal.classList.add('search--active');
+});
+
+searchClose.addEventListener('click', function() {
+  body.classList.remove('no-scroll');
+  searchModal.classList.remove('search--active');
+  navMenu.classList.remove("menu__active");
+  container.classList.remove("container--active");
+});
+
+searchInner.addEventListener('click', () => {
+  event.stopPropagation();
+});
+
+searchModal.addEventListener('click', function() {
+  body.classList.remove('no-scroll');
+  searchModal.classList.remove('search--active');
+  navMenu.classList.remove("menu__active");
+  container.classList.remove("container--active");
+});

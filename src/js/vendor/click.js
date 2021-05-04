@@ -70,3 +70,4 @@ if(!choiceFive) {
     choiceFive.classList.toggle('authors__choice--active');
   });
 }
+
