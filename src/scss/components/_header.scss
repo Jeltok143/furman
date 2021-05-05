@@ -97,6 +97,10 @@
 .header__buttons {
   position: absolute;
   right: 15px;
+
+  @media (max-width: (499px)) {
+    top: 22.5px;
+  }
 }
 
 .header__buttons-item {
