@@ -2203,6 +2203,26 @@
     .catalog__choice-left {
       flex-direction: column; } }
 
+.catalog__choice-wrapper {
+  position: relative; }
+  .catalog__choice-wrapper:first-child {
+    margin-right: 2rem; }
+    @media (max-width: 991px) {
+      .catalog__choice-wrapper:first-child {
+        margin-right: 0; } }
+  .catalog__choice-wrapper:last-child {
+    margin: 0; }
+  .catalog__choice-wrapper::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 17px;
+    height: 15px;
+    width: 15px;
+    background-image: url(../img/icons/down-arrow-black.png);
+    background-repeat: no-repeat; }
+
 .catalog__roll {
   display: flex;
   order: 1;
