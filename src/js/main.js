@@ -208,3 +208,21 @@ if(!document.querySelector('.form-call-panel')) {
 } else {
   validateForms('.form-call-panel', { fio: { required: true }, tel: { required: true }, question: { required: true } });
 }
+
+if(!document.querySelector('.form-mail')) {
+
+} else {
+  validateForms('.form-mail', { email: { required: true } });
+}
+
+if(!document.querySelector('.form-modal-review')) {
+
+} else {
+  validateForms('.form-modal-review', { fio: { required: true }, tel: { required: true } });
+}
+
+if(!document.querySelector('.form-review')) {
+
+} else {
+  validateForms('.form-review', { fio: { required: true }, question: { required: true } });
+}

@@ -182,28 +182,39 @@
             <p class="modal__subtitle">
               С другой стороны сложившаяся структура организации требуют от нас анализа существенных финансовых и административных условий.
             </p>
-            <input type="text" class="page__input page__input--rev" placeholder="Ваше имя">
-            <div class="review__input">
-              <input type="text" class="page__input page__input--rev" placeholder="Ваш отзыв">
-            </div>
-            <div>
-              <label class="page__upload-btn">
-                ↓ Прикрепить фото
-                <input type="file" class="page__upload">
-              </label>
-            </div>
 
-            <div class="reviews__access">
-              <label class="page__label">
-                <div>
-                  <input type="checkbox" class="page__check">
-                  <span class="page__fake"></span>
-                </div>
-                <span class="page__access">Я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности.</span>
-              </label>
-            </div>
+            <form class="form-review">
+              <input class="reviews__input" type="hidden" name="admin_email[]" value="maxgraph23@gmail.com">
+              <input class="peview__input" type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+    
+              <div class="page__input-wrapper">
+                <input class="peviews__input" type="text" name="fio" data-validate-field="fio" placeholder="Имя">
+              </div>
+    
+              <div class="page__input-wrapper">
+                
+                <textarea class="peviews__input reviews__input--question" type="text" name="question" data-validate-field="question" placeholder="Ваш вопрос"></textarea>
+              </div>
 
-            <button class="black__button black__button--full">Оставить отзыв</button>
+              <div>
+                <label class="page__upload-btn">
+                  ↓ Прикрепить фото
+                  <input type="file" class="page__upload">
+                </label>
+              </div>
+  
+              <div class="reviews__access">
+                <label class="page__label">
+                  <div>
+                    <input type="checkbox" class="page__check">
+                    <span class="page__fake"></span>
+                  </div>
+                  <span class="page__access">Я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности.</span>
+                </label>
+              </div>
+  
+              <button class="black__button black__button--full">Оставить отзыв</button>
+            </form>
 
           </div><!-- ./reviews__right-inner -->
         </div><!-- ./reviews__right -->

@@ -141,3 +141,49 @@
 .reviews__load {
   width: 100%;
 }
+
+.peviews__input {
+  width: 100%;
+  padding: 1.6rem;
+  border: 1px solid $black;
+  font-size: 1.7rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  color: $black;
+  margin-bottom: 3rem;
+  resize: none;
+  outline: none;
+
+  &--rev {
+    width: 100%;
+    max-width: none;
+  }
+
+  &--question {
+    min-height: 100px;
+  }
+
+  @media (max-width: (1199px)) {
+    font-size: 1.25rem;
+    padding: 1.1rem;
+  }
+
+  @media (max-width: (768px)) {
+    min-width: 280px
+  }
+
+  @media (max-width: (499px)) {
+    min-width: 220px
+  }
+
+  &::placeholder {
+    font-size: 1.7rem;
+    font-family: 'Inter';
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.3);
+
+    @media (max-width: (1199px)) {
+      font-size: 1.25rem;
+    }
+  }
+}

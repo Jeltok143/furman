@@ -302,26 +302,6 @@
   position: relative;
 }
 
-.js-validate-error-label {
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  color: #FF0000!important;
-  font-size: 1.4rem;
-  font-family: 'Raleway';
-  font-weight: 500;
-
-  @media (max-width: (499px)) {
-    font-size: 1.2rem;
-  }
-}
-
-.form-call-catalog {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .page__label {
   max-width: 380px;
   width: 100%;
@@ -333,6 +313,10 @@
     .page__fake {
       border-width: 2px;
     }
+  }
+
+  &--review {
+    margin-bottom: 3rem;
   }
 
   @media (max-width: (991px)) {
