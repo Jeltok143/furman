@@ -2286,6 +2286,10 @@
         margin: 0; } }
   .catalog__choice-wrapper:last-child {
     margin: 0; }
+  .catalog__choice-wrapper:hover::before {
+    transform: rotate(180deg);
+    top: 15%;
+    right: 10px; }
   .catalog__choice-wrapper::before {
     content: "";
     display: block;
@@ -2295,7 +2299,8 @@
     background-image: url(../img/icons/down-arrow-black.png);
     background-repeat: no-repeat;
     right: 5px;
-    top: 21%; }
+    top: 21%;
+    transition: transform .2s linear; }
   @media (max-width: 991px) {
     .catalog__choice-wrapper {
       width: 75%; } }
