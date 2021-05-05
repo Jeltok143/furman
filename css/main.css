@@ -2292,7 +2292,7 @@
     position: absolute;
     width: 20px;
     height: 20px;
-    background-image: url(img/icons/down-arrow-black.png);
+    background-image: url(../img/icons/down-arrow-black.png);
     background-repeat: no-repeat;
     right: 5px;
     top: 21%; }
