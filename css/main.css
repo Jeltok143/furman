@@ -476,7 +476,8 @@
   overflow: auto; }
   .modal__container--opened {
     display: block;
-    transform: translateX(0%); }
+    transform: translateX(0%);
+    overflow: hidden; }
   @media (max-width: 768px) {
     .modal__container {
       width: 70%; } }
@@ -562,9 +563,6 @@
   width: 100%;
   align-items: center;
   padding-top: 2rem; }
-  @media (max-width: 499px) {
-    .modal__block-top {
-      padding-top: 15rem; } }
 
 .modal__block-text {
   max-width: 380px;
