@@ -145,7 +145,6 @@ var searchMobile = document.querySelector('.header__buttons-item');
 var searchModal = document.querySelector('.search');
 var searchClose = document.querySelector('.search__close-btn');
 var searchInner = document.querySelector('.search__inner');
-var searchMenu = document.querySelector('.menu__input');
 searchHidden.addEventListener('click', function () {
   body.classList.add('no-scroll');
   searchModal.classList.add('search--active');
@@ -169,14 +168,44 @@ searchModal.addEventListener('click', function () {
   navMenu.classList.remove("menu__active");
   container.classList.remove("container--active");
 });
-searchMenu.addEventListener('click', function () {
-  body.classList.add('no-scroll');
-  searchModal.classList.add('search--active');
-}); // Input changes
+var inputs = document.querySelectorAll('input[type="tel"]');
+var im = new Inputmask('+7 (999) 999-99-99');
+im.mask(inputs); // validate
 
-var inputValue = document.querySelector('.search__input');
-var searchChange = document.querySelector('.search__offer');
-inputValue.addEventListener('change', function () {
-  searchChange.classList.toggle('search__offer--active');
-});
+function validateForms(selector, rules) {
+  new window.JustValidate(selector, {
+    rules: rules,
+    submitHandler: function submitHandler(form, values, ajax) {
+      console.log(form);
+    }
+  });
+}
+
+if (!document.querySelector('.form-call-catalog')) {} else {
+  validateForms('.form-call-catalog', {
+    fio: {
+      required: true
+    },
+    tel: {
+      required: true
+    },
+    question: {
+      required: true
+    }
+  });
+}
+
+if (!document.querySelector('.form-call-panel')) {} else {
+  validateForms('.form-call-panel', {
+    fio: {
+      required: true
+    },
+    tel: {
+      required: true
+    },
+    question: {
+      required: true
+    }
+  });
+}
 //# sourceMappingURL=main.js.map

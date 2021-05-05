@@ -188,12 +188,6 @@
         c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z"
     />
   </symbol>
-
-  <symbol id="love-icon" viewBox="0 -20 480 480">
-    <path
-      d="m348 0c-43 .0664062-83.28125 21.039062-108 56.222656-24.71875-35.183594-65-56.1562498-108-56.222656-70.320312 0-132 65.425781-132 140 0 72.679688 41.039062 147.535156 118.6875 216.480469 35.976562 31.882812 75.441406 59.597656 117.640625 82.625 2.304687 1.1875 5.039063 1.1875 7.34375 0 42.183594-23.027344 81.636719-50.746094 117.601563-82.625 77.6875-68.945313 118.726562-143.800781 118.726562-216.480469 0-74.574219-61.679688-140-132-140zm-108 422.902344c-29.382812-16.214844-224-129.496094-224-282.902344 0-66.054688 54.199219-124 116-124 41.867188.074219 80.460938 22.660156 101.03125 59.128906 1.539062 2.351563 4.160156 3.765625 6.96875 3.765625s5.429688-1.414062 6.96875-3.765625c20.570312-36.46875 59.164062-59.054687 101.03125-59.128906 61.800781 0 116 57.945312 116 124 0 153.40625-194.617188 266.6875-224 282.902344zm0 0"
-    />
-  </symbol>
 </svg>
  
   <div class="call__widget">
@@ -214,23 +208,35 @@
     </button><!-- ./call__close -->
 
     <div class="modal__block">
-      <div class="modal__block-top">
+      <div class="modal__block-top modal__block-top--main">
         <h2 class="modal__title">Заказ обратного звонка</h2>
-        <input type="text" placeholder="Имя" class="page__input">
-        <input type="tel" placeholder="Номер телефона" class="page__input">
-        <textarea rows="4" class="page__input" placeholder="Ваш вопрос"></textarea>
+        <form class="form-call-catalog">
+          <input class="page__input" type="hidden" name="admin_email[]" value="maxgraph23@gmail.com">
+          <input class="page__input" type="hidden" name="form_subject" value="Заявка с сайта Сайт">
 
-        <div class="modal__block-bottom">
+          <div class="page__input-wrapper">
+            <input class="page__input" type="text" name="fio" data-validate-field="fio" placeholder="Имя">
+          </div>
+
+          <div class="page__input-wrapper">
+            <input class="page__input" type="tel" name="tel" data-validate-field="tel" placeholder="Номер телефона">
+          </div>
+
+          <div class="page__input-wrapper">
+            
+            <textarea class="page__input page__input--question" type="text" name="question" data-validate-field="question" placeholder="Ваш вопрос"></textarea>
+          </div>
+
           <label class="page__label">
-            <div>
-              <input type="checkbox" class="page__check">
-              <span class="page__fake"></span>
-            </div>
+            <input type="checkbox" class="page__check">
+            <span class="page__fake"></span>
             <span class="page__access">Я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности.</span>
           </label>
-        </div>
+
+          <button type="submit" class="black__button black__button--call">Заказать звонок</button>
+        </form>
       </div>
-      <button class="black__button black__button--call">Заказать звонок</button>
+      
 
 
       <p class="modal__block-text">
@@ -292,53 +298,8 @@
           <img src="img/icons/close-icon.png" alt="" class="search__close-img">
         </button>
       </div>
-      <input type="text" placeholder="Хочу купить" class="search__input" onchange="">
-      <div class="search__offer">
-
-
-        <a href="product-sofa.html">
-          <div class="search__offer-item">
-            <div class="search__offer-left">
-              <img class="search__offer-prev" src="img/search/ph-1.png" alt="preview">
-              <h3 class="search__offer-name">Диван Plat</h3>
-            </div>
-            <h3 class="search__offer-price">от 89 082 ₽</h3>
-          </div><!-- ./search__offer-item -->
-        </a>
-
-        <a href="product-sofa.html">
-          <div class="search__offer-item">
-            <div class="search__offer-left">
-              <img class="search__offer-prev" src="img/search/ph-2.png" alt="preview">
-              <h3 class="search__offer-name">Диван Play</h3>
-            </div>
-            <h3 class="search__offer-price">от 89 082 ₽</h3>
-          </div><!-- ./search__offer-item -->
-        </a>
-
-        <a href="product-sofa.html">
-          <div class="search__offer-item">
-            <div class="search__offer-left">
-              <img class="search__offer-prev" src="img/search/ph-3.png" alt="preview">
-              <h3 class="search__offer-name">Диван Polo</h3>
-            </div>
-            <h3 class="search__offer-price">от 89 082 ₽</h3>
-          </div><!-- ./search__offer-item -->
-        </a>
-
-        <a href="product-sofa.html">
-          <div class="search__offer-item">
-            <div class="search__offer-left">
-              <img class="search__offer-prev" src="img/search/ph-4.png" alt="preview">
-              <h3 class="search__offer-name">Диван Porto</h3>
-            </div>
-            <h3 class="search__offer-price">от 89 082 ₽</h3>
-          </div><!-- ./search__offer-item -->
-        </a>
-
-
-      </div><!-- ./search__offer -->
-    </div><!-- ./search__inner -->
+      <input type="text" placeholder="Хочу купить" class="search__input">
+    </div>
   </div>
 </div>
 
