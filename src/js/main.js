@@ -181,3 +181,30 @@ searchModal.addEventListener('click', function() {
   navMenu.classList.remove("menu__active");
   container.classList.remove("container--active");
 });
+
+let inputs = document.querySelectorAll('input[type="tel"]');
+let im = new Inputmask('+7 (999) 999-99-99');
+im.mask(inputs);
+
+// validate
+
+function validateForms(selector, rules) {
+    new window.JustValidate(selector, {
+        rules: rules,
+        submitHandler: function (form, values, ajax) {
+            console.log(form);
+        }
+    });
+}
+
+if(!document.querySelector('.form-call-catalog')) {
+
+} else {
+  validateForms('.form-call-catalog', { fio: { required: true }, tel: { required: true }, question: { required: true } });
+}
+
+if(!document.querySelector('.form-call-panel')) {
+
+} else {
+  validateForms('.form-call-panel', { fio: { required: true }, tel: { required: true }, question: { required: true } });
+}

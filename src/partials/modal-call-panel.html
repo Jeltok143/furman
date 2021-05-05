@@ -6,23 +6,35 @@
     </button><!-- ./call__close -->
 
     <div class="modal__block">
-      <div class="modal__block-top">
+      <div class="modal__block-top modal__block-top--main">
         <h2 class="modal__title">Заказ обратного звонка</h2>
-        <input type="text" placeholder="Имя" class="page__input">
-        <input type="tel" placeholder="Номер телефона" class="page__input">
-        <textarea rows="4" class="page__input" placeholder="Ваш вопрос"></textarea>
+        <form class="form-call-catalog">
+          <input class="page__input" type="hidden" name="admin_email[]" value="maxgraph23@gmail.com">
+          <input class="page__input" type="hidden" name="form_subject" value="Заявка с сайта Сайт">
 
-        <div class="modal__block-bottom">
+          <div class="page__input-wrapper">
+            <input class="page__input" type="text" name="fio" data-validate-field="fio" placeholder="Имя">
+          </div>
+
+          <div class="page__input-wrapper">
+            <input class="page__input" type="tel" name="tel" data-validate-field="tel" placeholder="Номер телефона">
+          </div>
+
+          <div class="page__input-wrapper">
+            
+            <textarea class="page__input page__input--question" type="text" name="question" data-validate-field="question" placeholder="Ваш вопрос"></textarea>
+          </div>
+
           <label class="page__label">
-            <div>
-              <input type="checkbox" class="page__check">
-              <span class="page__fake"></span>
-            </div>
+            <input type="checkbox" class="page__check">
+            <span class="page__fake"></span>
             <span class="page__access">Я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности.</span>
           </label>
-        </div>
+
+          <button type="submit" class="black__button black__button--call">Заказать звонок</button>
+        </form>
       </div>
-      <button class="black__button black__button--call">Заказать звонок</button>
+      
 
 
       <p class="modal__block-text">

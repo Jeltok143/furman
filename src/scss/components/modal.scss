@@ -139,8 +139,16 @@
   align-items: center;
   padding-top: 2rem;
 
+  &--main {
+    padding-top: 0;
+  }
+
   @media (max-width: (499px)) {
     padding-top: 15rem;
+
+    &--main {
+      padding-top: 0;
+    }
   }
 }
 
