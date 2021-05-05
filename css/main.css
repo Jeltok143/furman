@@ -75,6 +75,9 @@
 .header__buttons {
   position: absolute;
   right: 15px; }
+  @media (max-width: 499px) {
+    .header__buttons {
+      top: 22.5px; } }
 
 .header__buttons-item {
   border: none;
