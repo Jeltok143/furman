@@ -717,8 +717,8 @@
 
 .modal__review-exit {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 35px;
+  right: 35px;
   width: 25px;
   height: 25px;
   background: none;
@@ -1111,6 +1111,23 @@
   font-weight: 500;
   color: rgba(0, 0, 0, 0.4);
   margin-left: 1rem; }
+
+.form-call-catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.js-validate-error-label {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  color: #FF0000 !important;
+  font-size: 1.4rem;
+  font-family: 'Raleway';
+  font-weight: 500; }
+  @media (max-width: 499px) {
+    .js-validate-error-label {
+      font-size: 1.2rem; } }
 
 .contact__inner {
   padding: 8rem 0rem; }
@@ -1940,23 +1957,6 @@
 .page__input-wrapper {
   position: relative; }
 
-.js-validate-error-label {
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  color: #FF0000 !important;
-  font-size: 1.4rem;
-  font-family: 'Raleway';
-  font-weight: 500; }
-  @media (max-width: 499px) {
-    .js-validate-error-label {
-      font-size: 1.2rem; } }
-
-.form-call-catalog {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
 .page__label {
   max-width: 380px;
   width: 100%;
@@ -1965,6 +1965,8 @@
   align-items: flex-start; }
   .page__label:hover .page__fake {
     border-width: 2px; }
+  .page__label--review {
+    margin-bottom: 3rem; }
   @media (max-width: 991px) {
     .page__label {
       align-items: center; } }
@@ -2436,6 +2438,55 @@
 
 .reviews__load {
   width: 100%; }
+
+.peviews__input {
+  width: 100%;
+  padding: 1.6rem;
+  border: 1px solid #000;
+  font-size: 1.7rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 3rem;
+  resize: none;
+  outline: none; }
+  .peviews__input--rev {
+    width: 100%;
+    max-width: none; }
+  .peviews__input--question {
+    min-height: 100px; }
+  @media (max-width: 1199px) {
+    .peviews__input {
+      font-size: 1.25rem;
+      padding: 1.1rem; } }
+  @media (max-width: 768px) {
+    .peviews__input {
+      min-width: 280px; } }
+  @media (max-width: 499px) {
+    .peviews__input {
+      min-width: 220px; } }
+  .peviews__input::-moz-placeholder {
+    font-size: 1.7rem;
+    font-family: 'Inter';
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.3); }
+  .peviews__input:-ms-input-placeholder {
+    font-size: 1.7rem;
+    font-family: 'Inter';
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.3); }
+  .peviews__input::placeholder {
+    font-size: 1.7rem;
+    font-family: 'Inter';
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.3); }
+    @media (max-width: 1199px) {
+      .peviews__input::-moz-placeholder {
+        font-size: 1.25rem; }
+      .peviews__input:-ms-input-placeholder {
+        font-size: 1.25rem; }
+      .peviews__input::placeholder {
+        font-size: 1.25rem; } }
 
 .footer {
   background-color: #000;

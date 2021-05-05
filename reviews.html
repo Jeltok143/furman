@@ -267,18 +267,24 @@
 
       <div class="modal__mail-main">
         <h2 class="modal__title modal__title--mail">Подпишитесь на рассылку и акции</h2>
-        <input type="mail" class="page__input" placeholder="Электронная почта">
 
-        <div class="modal__block-bottom">
+        <form class="form-mail">
+          <input class="page__input" type="hidden" name="admin_email[]" value="maxgraph23@gmail.com">
+          <input class="page__input" type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+
+          <div class="page__input-wrapper">
+            <input class="page__input" type="email" name="email" data-validate-field="email" placeholder="Электронная почта">
+          </div>
+
+
           <label class="page__label">
             <input type="checkbox" class="page__check">
             <span class="page__fake"></span>
             <span class="page__access">Я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности.</span>
           </label>
-        </div>
 
-        <button class="black__button black__button--call">Подписаться</button>
-
+          <button class="black__button black__button--call">Подписаться</button>
+        </form>
       </div><!-- ./modal__mail-main -->
 
       <div class="modal__mail-bottom">
@@ -303,26 +309,27 @@
     <div class="modal__review-content">
       <h2 class="modal__title modal__title--review">Соберите <br> неповторимый диван</h2>
 
-      <div class="review__input">
-        <input type="text" class="page__input page__input--rev" placeholder="Имя">
-      </div>
-      <div class="review__input">
-        <input type="tel" class="page__input page__input--rev" placeholder="Номер телефона">
-      </div>
+      <form class="form-modal-review">
+        <input class="page__input" type="hidden" name="admin_email[]" value="maxgraph23@gmail.com">
+        <input class="page__input" type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+
+        <div class="page__input-wrapper">
+          <input class="page__input" type="text" name="fio" data-validate-field="fio" placeholder="Имя">
+        </div>
+
+        <div class="page__input-wrapper">
+          <input class="page__input" type="tel" name="tel" data-validate-field="tel" placeholder="Номер телефона">
+        </div>
 
 
-      <div class="modal__block-bottom">
-        <label class="page__label">
-          <div>
-            <input type="checkbox" class="page__check">
-            <span class="page__fake"></span>
-          </div>
+        <label class="page__label page__label--review">
+          <input type="checkbox" class="page__check">
+          <span class="page__fake"></span>
           <span class="page__access">Я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности.</span>
         </label>
-      </div>
 
-      <button class="black__button black__button--full">Заказать звонок</button>
-
+        <button type="submit" class="black__button black__button--full">Заказать звонок</button>
+      </form>
     </div><!-- ./modal__review-content -->
   </div><!-- ./modal__review-container -->
 </div><!-- ./modal__review -->
@@ -501,28 +508,39 @@
             <p class="modal__subtitle">
               С другой стороны сложившаяся структура организации требуют от нас анализа существенных финансовых и административных условий.
             </p>
-            <input type="text" class="page__input page__input--rev" placeholder="Ваше имя">
-            <div class="review__input">
-              <input type="text" class="page__input page__input--rev" placeholder="Ваш отзыв">
-            </div>
-            <div>
-              <label class="page__upload-btn">
-                ↓ Прикрепить фото
-                <input type="file" class="page__upload">
-              </label>
-            </div>
 
-            <div class="reviews__access">
-              <label class="page__label">
-                <div>
-                  <input type="checkbox" class="page__check">
-                  <span class="page__fake"></span>
-                </div>
-                <span class="page__access">Я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности.</span>
-              </label>
-            </div>
+            <form class="form-review">
+              <input class="reviews__input" type="hidden" name="admin_email[]" value="maxgraph23@gmail.com">
+              <input class="peview__input" type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+    
+              <div class="page__input-wrapper">
+                <input class="peviews__input" type="text" name="fio" data-validate-field="fio" placeholder="Имя">
+              </div>
+    
+              <div class="page__input-wrapper">
+                
+                <textarea class="peviews__input reviews__input--question" type="text" name="question" data-validate-field="question" placeholder="Ваш вопрос"></textarea>
+              </div>
 
-            <button class="black__button black__button--full">Оставить отзыв</button>
+              <div>
+                <label class="page__upload-btn">
+                  ↓ Прикрепить фото
+                  <input type="file" class="page__upload">
+                </label>
+              </div>
+  
+              <div class="reviews__access">
+                <label class="page__label">
+                  <div>
+                    <input type="checkbox" class="page__check">
+                    <span class="page__fake"></span>
+                  </div>
+                  <span class="page__access">Я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности.</span>
+                </label>
+              </div>
+  
+              <button class="black__button black__button--full">Оставить отзыв</button>
+            </form>
 
           </div><!-- ./reviews__right-inner -->
         </div><!-- ./reviews__right -->
